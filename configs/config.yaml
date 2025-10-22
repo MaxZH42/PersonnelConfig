@@ -457,13 +457,15 @@ rule-providers:
     type: http
   myDirect:
     type: http
-    behavior: domain
+    behavior: classical
+    format: text
     url: "https://gh-proxy.com/https://github.com/MaxZH42/PersonnelConfig/blob/main/ruleProviders/direct.list"
     path: ./ruleset/myDirect.yaml
     interval: 86400 
   myProxy:
     type: http
-    behavior: domain
+    behavior: classical
+    format: text
     url: "https://gh-proxy.com/https://github.com/MaxZH42/PersonnelConfig/blob/main/ruleProviders/proxy.list"
     path: ./ruleset/myProxy.yaml
     interval: 86400
