@@ -37,7 +37,7 @@ proxy-groups:
     tolerance: 50
   - name: 🌍 其他地区
     include-all: true
-    exclude-filter: (?i)\[\d+(?:x)?\]|港|HK|Hong.?Kong|hongkong|日本|东京|大阪|埼玉|JP|Japan|美|洛杉矶|硅谷|西雅图|芝加哥|US|United.?States|
+    exclude-filter: (?i)港|HK|Hong.?Kong|hongkong|日本|东京|大阪|埼玉|JP|Japan|美|洛杉矶|硅谷|西雅图|芝加哥|US|United.?States
     type: url-test
     interval: 300
     tolerance: 50
