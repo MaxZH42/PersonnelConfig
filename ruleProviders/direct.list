@@ -2,8 +2,8 @@ PROCESS-NAME,yourcontrols.exe
 PROCESS-NAME,Todesk.exe
 PROCESS-NAME,natpierce.exe
 PROCESS-NAME,BongoCat.exe
-DOMAIN,sharedchat.fun
 PROCESS-NAME,pixpin.exe
 PROCESS-NAME-REGEX,^easytier*
 PROCESS-NAME-REGEX,^syncthing.*
+DOMAIN,sharedchat.fun
 IP-CIDR,192.10.84.163/24
