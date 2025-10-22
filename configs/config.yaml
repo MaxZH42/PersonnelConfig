@@ -469,21 +469,21 @@ rule-providers:
     url: "https://gh-proxy.com/https://github.com/MaxZH42/PersonnelConfig/blob/main/ruleProviders/reject.list"
     path: ./ruleset/myReject.yaml
     interval: 86400
-myProxy:
+  myProxy:
     type: http
     behavior: classical
     format: text
     url: "https://gh-proxy.com/https://github.com/MaxZH42/PersonnelConfig/blob/main/ruleProviders/proxy.list"
     path: ./ruleset/myProxy.yaml
     interval: 86400
-myProxySG:
+  myProxySG:
     type: http
     behavior: classical
     format: text
     url: "https://gh-proxy.com/https://github.com/MaxZH42/PersonnelConfig/blob/main/ruleProviders/proxySG.list"
     path: ./ruleset/myProxySG.yaml
     interval: 86400
-myProxyHK:
+  myProxyHK:
     type: http
     behavior: classical
     format: text
