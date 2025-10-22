@@ -464,7 +464,7 @@ rule-providers:
   myProxy:
     type: http
     behavior: domain
-    url: "https://gh-proxy.com/https://github.com/MaxZH42/PersonnelConfig/blob/main/ruleProviders/direct.list"
+    url: "https://gh-proxy.com/https://github.com/MaxZH42/PersonnelConfig/blob/main/ruleProviders/proxy.list"
     path: ./ruleset/myProxy.yaml
     interval: 86400
 
