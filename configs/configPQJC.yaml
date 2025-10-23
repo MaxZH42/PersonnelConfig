@@ -19,7 +19,6 @@ proxy-groups:
     include-all: true
     interval: 300
     tolerance: 50
-
 - name: 🇯🇵 日本节点
     include-all: true
     filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
