@@ -1,3 +1,8 @@
+// https://linux.do/t/topic/235855
+// https://raw.githubusercontent.com/Keywos/rule/main/rename.js#in=&nm&out=en+cn&blkey=家宽+IPLC+IEPL&flag&bl
+// https://linux.do/t/topic/367263
+// https://raw.githubusercontent.com/Keywos/rule/main/rename.js#in=&nm&out=en+cn&blkey=家宽+| MITM+IPLC+IEPL&flag&bl&blpx&name=渠道名字&nf
+
 /**
  * 更新日期：2024-04-05 15:30:15
  * 用法：Sub-Store 脚本操作添加
