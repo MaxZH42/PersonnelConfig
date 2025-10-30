@@ -469,6 +469,12 @@ rule-providers:
     url: "https://gh-proxy.com/https://github.com/MaxZH42/PersonnelConfig/blob/main/ruleProviders/proxyHK.list"
     path: ./ruleset/myProxyHK.list
     interval: 86400
+  fake_ip_filter_juewuy:
+    {
+      <<: *class,
+      path: ./ruleset/fake_ip_filter_juewuy.list,
+      url: "https://github.com/juewuy/ShellCrash/blob/dev/public/fake_ip_filter.list",
+    }
 
 rules:
   - "RULE-SET,myDirect,DIRECT"
