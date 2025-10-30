@@ -1,3 +1,44 @@
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "rule-set:fake_ip_filter_juewuy"
+    # - "*"
+    # - +.lan
+    # - +.local
+    # - time.*.com
+    # - ntp.*.com
+    # - +.market.xiaomi.com
+  use-hosts: false
+  use-system-hosts: true
+  default-nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+    - 114.114.114.114
+    - system
+  nameserver:
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query
+    - https://dns.alidns.com/dns-query      # 阿里（国内稳定）
+    - https://doh.pub/dns-query             # 腾讯 (境内，DoH，可作为备选)      
+  proxy-server-nameserver:
+    - https://1.1.1.1/dns-query     # Cloudflare，DoH3
+    - https://dns.google/dns-query  # Google，DoH3
+    - 1.1.1.1
+    - 8.8.8.8
+  direct-nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  fallback:
+    - 1.1.1.1 # Cloudflare DNS备用
+    - 8.8.8.8 # Google DNS备用
+  respect-rules: true
+  prefer-h3: false     # 如果DNS服务器支持DoH3会优先使用h3，提升性能
+  cache-algorithm: arc # 使用性能更优的 ARC 缓存算法
+  cache-size: 2048     # 限制缓存大小，避免占用过多内存
+
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -457,36 +498,42 @@ rule-providers:
     behavior: classical
     format: text
     url: "https://gh-proxy.com/https://github.com/MaxZH42/PersonnelConfig/blob/main/ruleProviders/direct.list"
-    path: ./ruleset/myDirect.yaml
+    path: ./ruleset/myDirect.list
     interval: 86400 
   myReject:
     type: http
     behavior: classical
     format: text
     url: "https://gh-proxy.com/https://github.com/MaxZH42/PersonnelConfig/blob/main/ruleProviders/reject.list"
-    path: ./ruleset/myReject.yaml
+    path: ./ruleset/myReject.list
     interval: 86400
   myProxy:
     type: http
     behavior: classical
     format: text
     url: "https://gh-proxy.com/https://github.com/MaxZH42/PersonnelConfig/blob/main/ruleProviders/proxy.list"
-    path: ./ruleset/myProxy.yaml
+    path: ./ruleset/myProxy.list
     interval: 86400
   myProxySG:
     type: http
     behavior: classical
     format: text
     url: "https://gh-proxy.com/https://github.com/MaxZH42/PersonnelConfig/blob/main/ruleProviders/proxySG.list"
-    path: ./ruleset/myProxySG.yaml
+    path: ./ruleset/myProxySG.list
     interval: 86400
   myProxyHK:
     type: http
     behavior: classical
     format: text
     url: "https://gh-proxy.com/https://github.com/MaxZH42/PersonnelConfig/blob/main/ruleProviders/proxyHK.list"
-    path: ./ruleset/myProxyHK.yaml
+    path: ./ruleset/myProxyHK.list
     interval: 86400
+  fake_ip_filter_juewuy:
+    {
+      <<: *class,
+      path: ./ruleset/fake_ip_filter_juewuy.list,
+      url: "https://github.com/juewuy/ShellCrash/blob/dev/public/fake_ip_filter.list",
+    }
 
 rules:
   - "RULE-SET,myDirect,DIRECT"
