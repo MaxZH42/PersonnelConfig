@@ -473,8 +473,8 @@ rule-providers:
     type: http
     behavior: classical
     format: text
-    path: ./ruleset/fake_ip_filter_juewuy.list,
     url: "https://gh-proxy.com/https://raw.githubusercontent.com/juewuy/ShellCrash/refs/heads/dev/public/fake_ip_filter.list"
+    path: ./ruleset/fake_ip_filter_juewuy.list
     interval: 86400
 
 rules:
