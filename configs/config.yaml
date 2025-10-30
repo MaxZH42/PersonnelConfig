@@ -35,7 +35,7 @@ dns:
     - 1.1.1.1 # Cloudflare DNS备用
     - 8.8.8.8 # Google DNS备用
   respect-rules: true
-  prefer-h3: false     # 如果DNS服务器支持DoH3会优先使用h3，提升性能
+  prefer-h3: true      # 如果DNS服务器支持DoH3会优先使用h3，提升性能
   cache-algorithm: arc # 使用性能更优的 ARC 缓存算法
   cache-size: 2048     # 限制缓存大小，避免占用过多内存
 
