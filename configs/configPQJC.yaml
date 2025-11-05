@@ -52,14 +52,6 @@ proxy-groups:
       - 🌍 其他地区
       - 🔍️ 手动切换
       - DIRECT
-  - name: 🔍️ 手动切换
-    include-all: true
-    type: select
-  - name: ♻️ 自动选择
-    type: url-test
-    include-all: true
-    interval: 300
-    tolerance: 50
   - name: 🇯🇵 日本节点
     include-all: true
     filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
@@ -97,6 +89,14 @@ proxy-groups:
     include-all: true
     exclude-filter: (?i)\[\d+(?:x)?\]|台|TW|Taiwan|新加坡|坡|狮城|SG|Singapore|日本|东京|大阪|埼玉|JP|Japan|美|洛杉矶|硅谷|西雅图|芝加哥|US|United.?States|KR|Korea|首尔|韩|韓
     type: select
+  - name: 🔍️ 手动切换
+    include-all: true
+    type: select
+  - name: ♻️ 自动选择
+    type: url-test
+    include-all: true
+    interval: 300
+    tolerance: 50
   - name: 🎮 游戏平台
     type: select
     proxies:
