@@ -50,14 +50,6 @@ proxy-groups:
       - 🌍 其他地区
       - 🔍️ 手动切换
       - DIRECT
-  - name: 🔍️ 手动切换
-    include-all: true
-    type: select
-  - name: ♻️ 自动选择
-    type: url-test
-    include-all: true
-    interval: 300
-    tolerance: 50
   - name: 🇭🇰 香港节点
     include-all: true
     filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
@@ -80,6 +72,14 @@ proxy-groups:
     include-all: true
     exclude-filter: (?i)港|HK|Hong.?Kong|hongkong|日本|东京|大阪|埼玉|JP|Japan|美|洛杉矶|硅谷|西雅图|芝加哥|US|United.?States
     type: select
+  - name: 🔍️ 手动切换
+    include-all: true
+    type: select
+  - name: ♻️ 自动选择
+    type: url-test
+    include-all: true
+    interval: 300
+    tolerance: 50
   - name: 🎮 游戏平台
     type: select
     proxies:
