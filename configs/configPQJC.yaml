@@ -47,6 +47,7 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
       - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
       - 🇰🇷 韩国节点
       - 🇨🇳 台湾节点
       - 🌍 其他地区
@@ -71,6 +72,13 @@ proxy-groups:
     type: url-test
     interval: 300
     tolerance: 50
+  - name: 🇭🇰 香港节点
+    include-all: true
+    filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
+    exclude-filter: (?i)\[\d+(?:x)?\]
+    type: url-test
+    interval: 300
+    tolerance: 50
   - name: 🇰🇷 韩国节点
     include-all: true
     filter: (?i)KR|Korea|KOR|首尔|韩|韓
@@ -87,7 +95,7 @@ proxy-groups:
     tolerance: 50
   - name: 🌍 其他地区
     include-all: true
-    exclude-filter: (?i)\[\d+(?:x)?\]|台|TW|Taiwan|新加坡|坡|狮城|SG|Singapore|日本|东京|大阪|埼玉|JP|Japan|美|洛杉矶|硅谷|西雅图|芝加哥|US|United.?States|KR|Korea|首尔|韩|韓
+    exclude-filter: (?i)\[\d+(?:x)?\]|台|TW|Taiwan|新加坡|坡|狮城|SG|Singapore|日本|东京|大阪|埼玉|JP|Japan|美|洛杉矶|硅谷|西雅图|芝加哥|US|United.?States|KR|Korea|首尔|韩|韓|港|HK|hk|Hong Kong|HongKong|hongkong
     type: select
   - name: 🔍️ 手动切换
     include-all: true
@@ -105,6 +113,7 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
       - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
       - 🇰🇷 韩国节点
       - 🇨🇳 台湾节点
       - 🌍 其他地区
@@ -117,6 +126,7 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
       - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
       - 🇰🇷 韩国节点
       - 🇨🇳 台湾节点
       - 🌍 其他地区
@@ -130,6 +140,7 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
       - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
       - 🇰🇷 韩国节点
       - 🇨🇳 台湾节点
       - 🌍 其他地区
@@ -143,6 +154,7 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
       - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
       - 🇰🇷 韩国节点
       - 🇨🇳 台湾节点
       - 🌍 其他地区
@@ -156,6 +168,7 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
       - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
       - 🇰🇷 韩国节点
       - 🇨🇳 台湾节点
       - 🌍 其他地区
@@ -167,6 +180,7 @@ proxy-groups:
       - DIRECT
       - 🇯🇵 日本节点
       - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
       - 🔍️ 手动切换
   - name: 📢 谷歌FCM
@@ -177,6 +191,7 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
       - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
       - 🇰🇷 韩国节点
       - 🇨🇳 台湾节点
       - 🔍️ 手动切换
@@ -188,6 +203,7 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
       - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
       - 🇰🇷 韩国节点
       - 🇨🇳 台湾节点
       - 🌍 其他地区
@@ -200,6 +216,7 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
       - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
       - 🇰🇷 韩国节点
       - 🇨🇳 台湾节点
       - 🌍 其他地区
@@ -212,6 +229,7 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
       - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
       - 🇰🇷 韩国节点
       - 🇨🇳 台湾节点
       - 🌍 其他地区
@@ -224,6 +242,7 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
       - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
       - 🇰🇷 韩国节点
       - 🇨🇳 台湾节点
       - 🌍 其他地区
@@ -253,6 +272,7 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
       - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
       - 🇰🇷 韩国节点
       - 🇨🇳 台湾节点
       - 🌍 其他地区
@@ -482,7 +502,7 @@ rules:
   - "RULE-SET,myProxy,🚀 节点选择"
   - "RULE-SET,myReject,REJECT"
   - "RULE-SET,myProxySG,🇸🇬 狮城节点"
-  - "RULE-SET,myProxyHK,🇸🇬 狮城节点"
+  - "RULE-SET,myProxyHK,🇭🇰 香港节点"
   - "RULE-SET,LocalAreaNetwork,🎯 全球直连"
   - "RULE-SET,UnBan,🎯 全球直连"
   - "RULE-SET,BanAD,🛑 广告拦截"
