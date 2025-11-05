@@ -414,6 +414,13 @@ rule-providers:
     interval: 86400
     format: text
     type: http
+  fake_ip_filter_juewuy:
+    type: http
+    behavior: domain
+    format: text
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/juewuy/ShellCrash/refs/heads/dev/public/fake_ip_filter.list"
+    path: ./ruleset/fake_ip_filter_juewuy.list
+    interval: 86400
 
 rules:
   - "RULE-SET,LocalAreaNetwork,🎯 全球直连"
