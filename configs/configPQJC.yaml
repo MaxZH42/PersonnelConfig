@@ -502,7 +502,7 @@ rules:
   - "RULE-SET,myProxy,🚀 节点选择"
   - "RULE-SET,myReject,REJECT"
   - "RULE-SET,myProxySG,🇸🇬 狮城节点"
-  - "RULE-SET,myProxyHK,🇭🇰 香港节点"
+  - "RULE-SET,myProxyHK,🇸🇬 狮城节点"
   - "RULE-SET,LocalAreaNetwork,🎯 全球直连"
   - "RULE-SET,UnBan,🎯 全球直连"
   - "RULE-SET,BanAD,🛑 广告拦截"
