@@ -3,6 +3,7 @@ PROCESS-NAME,Todesk.exe
 PROCESS-NAME,natpierce.exe
 PROCESS-NAME,BongoCat.exe
 PROCESS-NAME,pixpin.exe
+PROCESS-NAME,flightsimulator.exe
 PROCESS-NAME-REGEX,^easytier*
 PROCESS-NAME-REGEX,^syncthing.*
 DOMAIN,sharedchat.fun
