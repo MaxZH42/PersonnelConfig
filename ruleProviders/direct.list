@@ -6,5 +6,6 @@ PROCESS-NAME,pixpin.exe
 PROCESS-NAME,flightsimulator.exe
 PROCESS-NAME-REGEX,^easytier*
 PROCESS-NAME-REGEX,^syncthing.*
+DOMAIN-KEYWORD,hybgzs
 DOMAIN,sharedchat.fun
 IP-CIDR,192.10.84.163/24
