@@ -5,6 +5,8 @@ PROCESS-NAME,BongoCat.exe
 PROCESS-NAME,pixpin.exe
 PROCESS-NAME,rustdesk.exe
 PROCESS-NAME,flightsimulator.exe
+PROCESS-NAME,gameviewer.exe
+PROCESS-NAME,uu.exe
 PROCESS-NAME-REGEX,^easytier*
 PROCESS-NAME-REGEX,^syncthing.*
 DOMAIN-KEYWORD,hybgzs
