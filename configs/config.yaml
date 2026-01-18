@@ -500,6 +500,13 @@ rule-providers:
     url: "https://gh-proxy.com/https://github.com/MaxZH42/PersonnelConfig/blob/main/ruleProviders/direct.list"
     path: ./ruleset/myDirect.list
     interval: 86400 
+  myGame:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://gh-proxy.com/https://github.com/MaxZH42/PersonnelConfig/blob/main/ruleProviders/game.list"
+    path: ./ruleset/myGame.list
+    interval: 86400 
   myReject:
     type: http
     behavior: classical
@@ -538,6 +545,7 @@ rule-providers:
 
 rules:
   - "RULE-SET,myDirect,DIRECT"
+  - "RULE-SET,myGame,DIRECT"
   - "RULE-SET,myProxy,🚀 节点选择"
   - "RULE-SET,myReject,REJECT"
   - "RULE-SET,myProxySG,🇸🇬 狮城节点"
