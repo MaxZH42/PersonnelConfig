@@ -1,5 +1,4 @@
 PROCESS-NAME,Todesk.exe
-PROCESS-NAME,natpierce.exe
 PROCESS-NAME,pixpin.exe
 PROCESS-NAME,rustdesk.exe
 PROCESS-NAME-REGEX,^easytier*
