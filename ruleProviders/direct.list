@@ -1,6 +1,6 @@
 PROCESS-NAME,Todesk.exe
 PROCESS-NAME,pixpin.exe
-
+PROCESS-NAME,rustdesk.exe
 PROCESS-NAME,weixin.exe
 PROCESS-NAME,WXWork.exe
 PROCESS-NAME-REGEX,^easytier*
