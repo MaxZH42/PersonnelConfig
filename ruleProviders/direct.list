@@ -8,5 +8,5 @@ PROCESS-NAME-REGEX,^syncthing.*
 DOMAIN-KEYWORD,hybgzs
 DOMAIN,sharedchat.fun
 DOMAIN,kfc-api.sxxe.net
-IP-CIDR,192.10.84.163/24
 DOMAIN,ai.mbnb.cc
+IP-CIDR,192.10.84.163/24
